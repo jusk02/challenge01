@@ -1,0 +1,70 @@
+$icons:
+  "activity",
+  "airplay",
+  "alert-circle",
+  "alert-octagon",
+  "alert-triangle",
+  "log-in",
+  "log-out",
+  "search"
+  ;
+
+$icon-size: 25px;
+
+@each $icon in $icons {
+  .#{$icon}-icon {
+    &::before {
+      display: inline-block;
+      position: relative;
+      width: $icon-size;
+      height: $icon-size;
+      background-image: url('./assets/'+ $icon + '.svg');
+      background-repeat: no-repeat;
+      background-size:$icon-size $icon-size;
+      content: "";
+    }
+  }
+}
+
+.main-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.navigation {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+
+  }
+
+  &__items {
+    list-style: none;
+  }
+
+  &__item {
+
+  }
+  &__icon {
+    width: 15px;
+    height: 15px;
+
+  }
+
+  &__exit {
+
+  }
+}
+
+.control-panel {
+  height: 100vh;
+  display: flex;
+
+  &__container {
+
+  }
+}
