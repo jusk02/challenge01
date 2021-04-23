@@ -184,6 +184,8 @@ $icon-size: 25px;
     padding: 0;
     width: 50%;
     justify-content: space-around;
+    animation: nav-grow-horizontal 800ms ease-out forwards;
+    animation-delay: 800ms;
   }
 
   &__item {
@@ -359,6 +361,74 @@ $icon-size: 25px;
   margin-bottom: 16px;
 }
 
+// animation
+@keyframes fade {
+  0% {
+    opacity: 0;
+    left: -100px;
+  }
+  1% {
+    opacity: 0.1;
+    left: -100px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes nav-grow-vertical {
+  0% {
+    height: 0%;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    height: 50%;
+  }
+}
+
+@keyframes nav-grow-horizontal {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    width: 50%;
+  }
+}
+
+@keyframes nav-item-grow {
+  0% {
+    height: 0;
+    width: 0;
+  }
+
+  100% {
+    width: $icon-size;
+    height: $icon-size;
+  }
+}
+
+.navigation__items {
+  animation-delay: 600ms;
+}
+
+.navigation__item {
+  animation: nav-item-grow 800ms ease-out forwards;
+  animation-delay: 500ms;
+}
+
+.content-box {
+  position: relative;
+  animation: fade 500ms ease-out forwards;
+  animation-delay: 300ms;
+}
+
+
 @media only screen and (min-width: 600px) {
   .control-panel {
     &--portfolio {
@@ -391,6 +461,7 @@ $icon-size: 25px;
       grid-column-end: 2;
       grid-row-start: 1;
       grid-row-end: 2;
+      animation-delay: 300ms;
     }
 
     &--promo {
@@ -398,6 +469,7 @@ $icon-size: 25px;
       grid-column-end: 3;
       grid-row-start: 1;
       grid-row-end: 3;
+      animation-delay: 300ms;
     }
 
     &--assets {
@@ -405,6 +477,7 @@ $icon-size: 25px;
       grid-column-end: 3;
       grid-row-start: 2;
       grid-row-end: 3;
+      animation-delay: 600ms;
     }
 
     &--indicators {
@@ -412,6 +485,7 @@ $icon-size: 25px;
       grid-column-end: 3;
       grid-row-start: 3;
       grid-row-end: 4;
+      animation-delay: 600ms
     }
   }
 
@@ -461,6 +535,7 @@ $icon-size: 25px;
       grid-column-end: 11;
       grid-row-start: 1;
       grid-row-end: 2;
+      animation-delay: 300ms;
     }
 
     &--indicators {
@@ -468,6 +543,7 @@ $icon-size: 25px;
       grid-column-end: 8;
       grid-row-start: 2;
       grid-row-end: 3;
+      animation-delay: 600ms;
     }
 
     &--promo {
@@ -475,6 +551,7 @@ $icon-size: 25px;
       grid-column-end: 11;
       grid-row-start: 2;
       grid-row-end: 3;
+      animation-delay: 600ms;
     }
 
     &--promo & {
@@ -493,69 +570,13 @@ $icon-size: 25px;
     }
 
     &__items {
+      animation: nav-grow-vertical 800ms ease-out forwards;
       height: 50%;
     }
-  }
-}
 
-// animation
-
-/* The animation code */
-@keyframes fade {
-  0% {
-    opacity: 0;
-    left: -100px;
-  }
-  1% {
-    opacity: 0.1;
-    left: -100px;
-  }
-  100% {
-    opacity: 1;
-    left: 0;
-  }
-}
-
-@keyframes nav-grow-vertical {
-  0% {
-    height: 0%;
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-    height: 50%;
-  }
-}
-
-@keyframes nav-item-grow {
-  0% {
-    height: 0%;
-    width: 0%;
-  }
-
-  100% {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.navigation__items {
-  animation: nav-grow-vertical 800ms ease-out forwards;
-  animation-delay: 1800ms;
-}
-
-.navigation__item {
-  animation: nav-item-grow 800ms ease-out forwards;
-  animation-delay: 1850ms;
-}
-
-.content-box {
-  position: relative;
-  animation: fade 500ms ease-out forwards;
-    @for $i from 1 through 50 {
-      &:nth-child(#{$i}) {
-        animation-delay: 300ms * $i;
-      }
+    &__item {
+      animation-delay: 100ms;
     }
+  }
 }
+
