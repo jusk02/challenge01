@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="1cddb3bcbe7e8bb69f5c34e3607f6cb0">
+</head>
+<body>
+  <div class="main-container">
+    <div class="control-panel">
+      <nav class="navigation">
+        <div class="navigation__logo">
+          <img src="e49c7661276f84670dda0cdd08371f65" alt="" class="navigation__logo-image">
+        </div>
+        <ul class="navigation__items">
+          <li class="navigation__item"><a href="" class="navigation__link"><span class="navigation__icon activity-icon"></span></a></li>
+          <li class="navigation__item"><a href="" class="navigation__link"><span class="navigation__icon airplay-icon"></span></a></li>
+          <li class="navigation__item"><a href="" class="navigation__link"><span class="navigation__icon alert-circle-icon"></span></a></li>
+          <li class="navigation__item"><a href="" class="navigation__link"><span class="navigation__icon alert-octagon-icon"></span></a></li>
+          <li class="navigation__item"><a href="" class="navigation__link"><span class="navigation__icon alert-triangle-icon"></span></a></li>
+        </ul>
+        <div class="navigation__exit">
+          <button class="navigation__log-out-button">
+            <span class="navigation__icon log-out-icon"></span>
+          </button>
+        </div>
+      </nav>
+      <div class="control-panel__container">
+        <header class="control-panel__header">
+          <h1 class="control-panel__title">Overview</h1>
+          <div class="quick-info">
+            <span class="quick-info__icon log-in-icon"></span>
+            <span class="quick-info__icon bell-icon"></span>
+            <div class="quick-info__user">
+              <span class="quick-info__icon activity-icon"></span>
+              <h3 class="quick-info__user-name">Juan</h3>
+            </div>
+          </div>
+        </header>
+        <div class="control-panel__content">
+          <div class="content-box content-box--portfolio">
+            <h2 class="content-box-title">Portfolio</h2>
+            <div class="content-box__content-wrapper">
+              <div class="control-panel__card control-panel__card--blue">
+                <h3 class="control-panel__card-title">17%88</h3>
+                <p class="control-panel__card-subtext">Some subtext</p>
+              </div>
+            </div>
+          </div>
+          <div class="content-box content-box--assets">
+            <h2 class="content-box-title">Assets</h2>
+            <div class="content-box__content-wrapper">
+              <div class="control-panel__card control-panel__card--purple">
+                <h3 class="control-panel__card-title">17%88</h3>
+                <p class="control-panel__card-subtext">Some subtext</p>
+              </div>
+              <div class="control-panel__card control-panel__card--green">
+                <h3 class="control-panel__card-title">17%88</h3>
+                <p class="control-panel__card-subtext">Some subtext</p>
+              </div>
+              <div class="control-panel__card control-panel__card--yellow">
+                <h3 class="control-panel__card-title">17%88</h3>
+                <p class="control-panel__card-subtext">Some subtext</p>
+              </div>
+            </div>
+          </div>
+          <div class="content-box content-box--indicators">
+            <div class="content-box__header">
+              <h2 class="content-box-title">Market is down 0.2%</h2>
+              <div class="content-box__filters">
+                <select name="" id="" class="content-box__filter">
+                  <option value="opt1">opt1</option>
+                  <option value="opt1">opt1</option>
+                  <option value="opt1">opt1</option>
+                </select>
+                <select name="" id="" class="content-box__filter">
+                  <option value="opt1">opt1</option>
+                  <option value="opt1">opt1</option>
+                  <option value="opt1">opt1</option>
+                </select>
+              </div>
+            </div>
+            <div class="content-box__content-wrapper">
+              <div class="content-box__table">
+                <div class="content-box__table-heading"></div>
+                <div class="content-box__table-row">
+
+                </div>
+                <div class="content-box__table-row">
+
+                </div>
+                <div class="content-box__table-row">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-box content-box--promo">
+            <div class="content-box__content-wrapper">
+              <div class="control-panel__card control-panel__card--black">
+                Contentent
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="77137a68c779c7e6707c254d43e1b69c"></script>
+</body>
+</html>
