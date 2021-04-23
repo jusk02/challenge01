@@ -152,6 +152,15 @@ $icon-size: 25px;
 
     &--black {
       background-color: black;
+      color: white;
+    }
+
+    &-title {
+      margin-bottom: 15px;
+    }
+
+    &-subtext {
+      margin: 5px 0;
     }
   }
 }
@@ -299,6 +308,11 @@ $icon-size: 25px;
         height: 100%;
         max-height: 300px;
         z-index: 1;
+
+        &-title {
+          margin: 20px 0;
+          line-height: 1.5;
+        }
       }
     }
   }
@@ -324,7 +338,7 @@ $icon-size: 25px;
     grid-row-start: 3;
     grid-row-end: 5;
   }
-  
+
   &--indicators {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -345,16 +359,9 @@ $icon-size: 25px;
       grid-row-start: 1;
       grid-row-end: 3;
     }
-    
+
     &__content {
       grid-template-rows: 40% 40% 40%;
-    }
-  }
-
-
-  &--promo {
-    .content-box__content-wrapper {
-      padding-bottom: 50%;
     }
   }
 
@@ -391,7 +398,7 @@ $icon-size: 25px;
       grid-row-start: 2;
       grid-row-end: 3;
     }
-    
+
     &--indicators {
       grid-column-start: 1;
       grid-column-end: 3;
